@@ -4,23 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>About</title>
 </head>
 <body>
     <div id="particles-js"></div>
-    <div class="header">
+    <div class="topnav" id="myTopnav">
         <a href="index.html" class="logo">John Carl Layosa</a>
         <div class="header-right">
           <a href="index.html">HOME</a>
           <a href="experience.html">TECH STACK</a>    
           <a class="active" href="about.html">ABOUT</a>
           <a href="contact.html">CONTACT</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
         </div>
       </div>
     <div class="about-content">
-        <h1>About Me</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quaerat excepturi voluptatum? Optio, deserunt corrupti tempora, fugiat consequuntur, quidem velit dicta harum repellendus non voluptate neque nostrum veritatis commodi inventore.</p>
+        <h1 class="animate__animated animate__fadeInDown animate__delay-0s">About Me</h1>
+        <p class="animate__animated animate__fadeInUp animate__delay-0s"> Hi, I'm John Carl Layosa, a student currently pursuing a degree in Information Technology. I’m deeply fascinated by the world of tech and enjoy exploring areas such as programming and system development. With a strong ambition to become a web developer, I continuously work on enhancing my skills. I’m a fast learner and highly adaptable, always open to new challenges and opportunities. My ultimate goal is to grow into a skilled professional who can create innovative digital solutions and make a positive impact in the tech industry. </p>
     </div>
+    <div class="certificate-header animate__animated animate__flipInX">
+      <h2>Certificates</h2>
+    </div>
+    <div class="certificate">
+      <img src="" alt="" class="animate__animated animate__flipInY">
+    </div>
+    <div class="certificate">
+      <img src="" alt="" class="animate__animated animate__flipInY">
+    </div>
+    <script>
+      function myFunction() {
+        const x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
     <script src="particles.js"></script>
     <script src="app.js"></script>
 </body>

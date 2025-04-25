@@ -4,26 +4,80 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="style.css">
-      <title>Experience</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <title>Tech Stack</title>
   </head>
   <body>
     <div id="particles-js"></div>
-    <div class="header">
+    <div class="topnav" id="myTopnav">
       <a href="index.html" class="logo">John Carl Layosa</a>
       <div class="header-right">
         <a href="index.html">HOME</a>
         <a class="active" href="experience.html">TECH STACK</a>    
         <a href="about.html">ABOUT</a>
         <a href="contact.html">CONTACT</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
     </div>
     <div class="experience-content">
-      <h1>Tech Stack</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quaerat excepturi voluptatum? Optio, deserunt corrupti tempora, fugiat consequuntur, quidem velit dicta harum repellendus non voluptate neque nostrum veritatis commodi inventore.</p>
+      <h1 class="animate__animated animate__fadeInDown animate__delay-0s">Tech Stack</h1>
+      <p class="animate__animated animate__fadeInUp animate__delay-0s">As a passionate learner, I'm currently exploring and building my skills with a range of technologies. My tech stack includes tools and languages I'm actively studying and using in personal projects to strengthen my understanding. I'm focused on learning best practices and building a solid foundation for creating real-world applications. Below are the key technologies I'm currently working with and have experience with.</p>
   </div>
-    <div class="tech-stack">
-
-    </div>
+  <div class="language-header animate__animated animate__flipInX">
+      <h2>Programming Language</h2>
+  </div>
+  <div class="techstack-wrapper">
+    <section class="techstack-section">
+      <div class="techstack-content">
+        <div class="tech-item">
+          <img src="JAVA.jpg" alt="" class="animate__animated animate__flipInY"><div class="animate__animated animate__zoomIn">Java</div>
+        </div>
+        <div class="tech-item">
+          <img src="HTML.jpg" alt="" class="animate__animated animate__flipInY"><div class="animate__animated animate__zoomIn">HTML</div>
+        </div>
+        <div class="tech-item">
+          <img src="CSS3.jpg" alt="" class="animate__animated animate__flipInY"><div class="animate__animated animate__zoomIn">CSS</div>
+        </div>
+        <div class="tech-item">
+          <img src="C.jpg" alt="" class="animate__animated animate__flipInY"><div class="animate__animated animate__zoomIn">C</div>
+       </div>
+      </div>
+    </section>
+  </div>
+  <div class="devtool-header animate__animated animate__flipInX">
+    <h2>Developer Tool</h2>
+  </div>
+  <div class="techstack-wrapper">
+    <section class="techstack-section">
+      <div class="techstack-content">
+        <div class="tech-item">
+          <img src="VSCode.jpg" alt="" class="animate__animated animate__flipInY"><div class="animate__animated animate__zoomIn">Visual Studio Code</div>
+        </div>
+        <div class="tech-item">
+          <img src="Android Studio.jpg" alt="" class="animate__animated animate__flipInY"><div class="animate__animated animate__zoomIn">Android Studio</div>
+        </div>
+        <div class="tech-item">
+          <img src="Oracle Apex.jpg" alt="" class="animate__animated animate__flipInY"><div class="animate__animated animate__zoomIn">Oracle APEX</div>
+        </div>
+        <div class="tech-item">
+          <img src="GitHub.jpg" alt="" class="animate__animated animate__flipInY"><div class="animate__animated animate__zoomIn">GitHub</div>
+        </div>
+      </div>
+    </section>
+  </div>
+    <script>
+      function myFunction() {
+        const x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
     <script src="particles.js"></script>
     <script src="app.js"></script>
   </body>
