@@ -122,11 +122,10 @@
 
 @media screen and (max-width: 800px) {
   .topnav a.logo {
-    font-size: 25px;         
+    font-size: 30px;         
     text-align: left;      
     display: block;          
-    padding: 10px 12px;     
-    margin: 0 auto;          
+    margin-top: 0.5rem;        
   }
 }
 
@@ -141,16 +140,19 @@
       
 img {
         border-radius: 50%;
+        width: 1005;
         max-width: 250px;
         height: 250px;
         box-shadow:  10px 10px 30px #E85A4F,
         -10px -10px 30px #E85A4F;
       }
 
-      @media screen and (max-width: 800px) {
+      @media screen and (max-width: 1200px) {
         img {
-          height: 220px;
-          width: 220px;
+          
+          height: fit-content;
+          width: fit-content;
+          margin-top: 5rem;
         }
       }
 
@@ -245,13 +247,33 @@ img {
     box-shadow: 5px #E85A4F;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
+  .icons {
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 1200px) {
   .header {
     flex-direction: column;
     text-align: center;
   }
+}
+
+@media (max-width: 1200px) {
+  .home-content {
+    font-size: auto;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
 
 }
+
+
+
+
 
 #particles-js {
   position: fixed;
@@ -549,7 +571,7 @@ img {
 
 .contact-content{
   text-align: center;
-  margin-top: 12rem;
+  margin-top: 10rem;
 }
 
 .contact-content h1{
@@ -624,6 +646,10 @@ img {
   margin-left: 10px;
   white-space: nowrap;
   display: none;
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
 }
 
 .contact-button:hover span {
@@ -632,14 +658,22 @@ img {
 
 @media (max-width: 800px) {
   .wrapper {
+    width: auto;
+    height: auto;
     flex-direction: row;
     align-items: center;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .contact-content {
-    margin-top: 8vw;
-    padding: 0.5rem;
+    font-size: auto;
+    margin-top: 10rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    justify-content: center;
   }
 }
+
+
+
