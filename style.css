@@ -16,8 +16,13 @@
 
     /* Base styling for top navigation */
 .topnav {
-  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1A1917;
   overflow: hidden;
+  z-index: 1000;
 }
 
 /* Navigation links */
@@ -25,7 +30,7 @@
   float: left;
   color: #E85A4F;
   text-align: center;
-  padding: 12px;
+  padding: 10px;
   text-decoration: none;
   font-size: 15px;
   font-family: "Rubik", sans-serif;
@@ -38,7 +43,7 @@
 .header-right {
   float: right;
   margin-right: 1rem;
-  margin-top: 10px;
+  
 }
 
 /* Logo style */
@@ -134,7 +139,7 @@
   display: flex;
   justify-content: center;
   align-items: center; 
-  margin-top: 2rem;
+  margin-top: 7.5rem;
 
 }
       
@@ -152,7 +157,7 @@ img {
           
           height: fit-content;
           width: fit-content;
-          margin-top: 5rem;
+          margin-top: 3.5rem;
         }
       }
 
@@ -224,7 +229,8 @@ img {
     display: flex;
     justify-content: center; 
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 3rem;
+    margin-bottom: auto;
     gap: 1%;
 }
 
@@ -301,7 +307,7 @@ img {
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
-  margin-top: 3rem;
+  margin-top: 7.5rem;
 }
 
 .experience-content h2{
@@ -326,6 +332,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 5rem;
 }
 
 
@@ -370,7 +377,6 @@ img {
   background: #e0e0e0;
   box-shadow: 5px 5px 10px #5a5a5a,
   -5px -5px 10px #EAE7DC;
-  margin-bottom: 0.5rem;
 }
 
 .tech-item img:hover {
@@ -394,7 +400,7 @@ img {
   .experience-content p {
     margin-left: 2rem;
     margin-right: 2rem;
-    font-size: auto;
+    font-size: 18px;
   }
 
   .about-content h1 {
@@ -405,32 +411,62 @@ img {
 
 @media screen and (max-width: 1200px) {
   .techstack-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
-    flex-direction: column;
     width: 100%;
     margin-left: 2rem;
     margin-right: 2rem;
+    height: auto;
+    box-sizing: border-box;
   }
 
   .techstack-content {
-    flex-direction: column;
-    gap: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    gap: 1rem;
+    text-align: center;
+    max-width: 100%;
   }
 
   .tech-item {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* balance within */
+    width: 100px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    box-sizing: border-box;
   }
 
   .tech-item img {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    display: block;
+    margin: 0;
+    padding: 0;
   }
 
   .tech-item div {
-    font-size: 20px;
+    margin-top: 8px; /* spacing only below image */
+    margin-bottom: 0;
+    font-size: 16px;
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    color: #5F5E5B;
+    line-height: 1; /* tighten line height */
   }
 }
+
+
+
 
 
 .language-header {
@@ -502,8 +538,7 @@ img {
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
-  margin-top: 3rem;
-  
+  margin-top: 7.5rem;
   text-align: center;
 }
 
@@ -561,7 +596,7 @@ img {
   .about-content p {
     margin-left: 2rem;
     margin-right: 2rem;
-    font-size: auto;
+    font-size: 18px;
   }
 
   .about-content h1 {
@@ -571,7 +606,7 @@ img {
 
 .contact-content{
   text-align: center;
-  margin-top: 10rem;
+  margin-top: 17rem;
 }
 
 .contact-content h1{
@@ -668,7 +703,7 @@ img {
 @media (max-width: 1200px) {
   .contact-content {
     font-size: auto;
-    margin-top: 10rem;
+    margin-top: 17rem;
     margin-left: 3rem;
     margin-right: 3rem;
     justify-content: center;
