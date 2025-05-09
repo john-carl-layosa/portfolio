@@ -1,16 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Sarina&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Chivo:wght@800&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
 
@@ -126,8 +119,8 @@
   .topnav a.logo {
     font-size: 30px;         
     text-align: left;      
-    display: block;          
-    margin-top: 0.5rem;        
+    display: block;  
+    justify-content: center;       
   }
 }
 
@@ -545,6 +538,7 @@ img {
   margin-left: 12rem;
   margin-right: 12rem;
   color: #5F5E5B;
+  margin-bottom: 1.5rem;
   font-size: 20px;
   line-height: 2;
   text-align: justify;
@@ -608,7 +602,7 @@ img {
 
 .contact-content h1{
   color: #E85A4F;
-  font-size: 35px;
+  font-size: 40px;
   font-family: "Chivo", sans-serif;
   font-optical-sizing: auto;
   font-weight: 800;
@@ -707,5 +701,142 @@ img {
   }
 }
 
+
+.certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  justify-items: center;
+  margin: 2rem auto;
+  max-width: 1000px;
+}
+
+.nft {
+  margin: 2rem auto;
+  border: 1px solid #E85A4F;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.800) 0%, #5F5E5B 100%);
+  box-shadow: 0 7px 20px 5px #E85A4F;
+  border-radius: 0.7rem;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  overflow: hidden;
+  transition: 0.5s all;
+  width: fit-content;
+}
+
+.nft:hover {
+  border: 1px solid #ffffff44;
+  box-shadow: 0 7px 50px 10px #E85A4F;
+  transform: scale(1.015);
+  filter: brightness(1.0);
+}
+
+.nft .main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.tokenImage {
+  border-radius: 0.5rem;
+  width: 350px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.description {
+  font-size: 20px;
+  text-align: center;
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  color: #EAE7DC;
+}
+
+.description:nth-of-type(2) {
+  margin-top: 0px;
+}
+
+.view-btn {
+  background-color: #E85A4F;
+  color: #EAE7DC;
+  padding: 0.4rem 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  transition: background 0.3s ease;
+}
+
+.view-btn:hover {
+  background-color: #5F5E5B ;
+}
+
+@media (max-width: 800px) {
+  .certificate-grid {
+    gap: 1rem;
+    padding: 0 0.5rem;
+  }
+
+  .nft {
+    max-width: 100%;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .header-right .icon {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .offcanvas-custom {
+    position: fixed !important;
+    width: 200px;
+    top: 1.5rem;
+    bottom: auto;
+    right: 10px;
+    border-radius: 10px;
+    background-color: #E85A4F;
+    color: #EAE7DC;
+    box-shadow: 5px 5px 10px #E85A4F, -5px -5px 10px #E85A4F;
+    padding: 1rem;
+    display: none;
+    z-index: 1050;
+  }
+
+  .offcanvas-body a {
+    display: block;
+    margin: 10px 0;
+    color: #EAE7DC;
+    text-decoration: none;
+    font-family: "Rubik", sans-serif;
+  }
+
+  .offcanvas-body a:hover {
+    color: #5F5E5B;
+  }
+
+  .offcanvas.show {
+    display: block !important;
+  }
+
+  .header-right > a:not(.icon) {
+    display: none;
+  }
+}
 
 
