@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>John Carl Layosa | Tech Stack</title>
+        <title>John Carl Layosa | Experience</title>
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -20,9 +20,10 @@
             <div class="header-right d-flex align-items-center">
                 <a href="index.html">HOME</a>
                 <a href="about.html">ABOUT</a>
-                <a class="active" href="experience.html">TECH STACK</a>
+                <a href="tech-stack.html">TECH STACK</a>
+                <a class="active" href="experience.html">EXPERIENCE</a>
                 <a href="contact.html">CONTACT</a>
-                <a class="icon ms-3 d-md-none" onclick="toggleMobileMenu()">
+                <a class="icon ms-3" onclick="toggleMobileMenu()">
                     <i class="fa fa-bars"></i>
                 </a>
             </div>
@@ -35,81 +36,120 @@
             <div class="offcanvas-body">
                 <a href="index.html">HOME</a>
                 <a href="about.html">ABOUT</a>
+                <a href="tech-stack.html">TECH STACK</a>
                 <a href="contact.html">CONTACT</a>
             </div>
         </div>
 
         <div class="experience-content">
-            <h1 class="animate__animated animate__fadeInDown animate__delay-0s">Tech Stack</h1>
+            <h1 class="animate__animated animate__fadeInDown animate__delay-0s">Experience</h1>
             <p class="animate__animated animate__fadeInUp animate__delay-0s">
-                As a passionate learner, I'm currently exploring and building my skills with a range of technologies.
-                My tech stack includes tools and languages I'm actively studying and using in personal projects to
-                strengthen my understanding. I'm focused on learning best practices and building a solid foundation
-                for creating real-world applications. Below are the key technologies I'm currently working with and
-                have experience with.
+                As a third-year Information Technology student at St. Dominic College of Asia, I have actively 
+                developed and validated my technical expertise. The following outlines the key projects completed 
+                and professional certifications earned throughout my academic journey.
             </p>
         </div>
 
-        <div class="language-header animate__animated animate__flipInX">
-            <h2>Programming Languages</h2>
+        <div class="certificate-header animate__animated animate__flipInX text-center mt-5">
+            <h2>My Projects</h2>
         </div>
-        <div class="techstack-wrapper">
-            <section class="techstack-section">
-                <div class="techstack-content">
-                    <div class="tech-item">
-                        <img src="HTML.jpg" alt="HTML" class="animate__animated animate__flipInY" />
-                        <div class="animate__animated animate__zoomIn">HTML</div>
+        <div class="project-grid">
+            <div class="project-card nft animate__animated animate__flipInY">
+                <div class="main">
+                    
+                    <div class="content-wrapper">
+                        <div id="DomiNotesCarousel" class="carousel slide" data-bs-ride="carousel">
+
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#DomiNotesCarousel" data-bs-slide-to="0" class="active"></button>
+                                <button type="button" data-bs-target="#DomiNotesCarousel" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#DomiNotesCarousel" data-bs-slide-to="2"></button>
+                                <button type="button" data-bs-target="#DomiNotesCarousel" data-bs-slide-to="3"></button>
+                                <button type="button" data-bs-target="#DomiNotesCarousel" data-bs-slide-to="4"></button>
+                            </div>
+
+                            <div class="carousel-inner token-image-carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="DomiNotes1.jpg" alt="DomiNotes Screenshot 1" class="d-block w-100 carousel-img-custom">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="DomiNotes2.jpg" alt="DomiNotes Screenshot 2" class="d-block w-100 carousel-img-custom">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="DomiNotes3.jpg" alt="DomiNotes Screenshot 3" class="d-block w-100 carousel-img-custom">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="DomiNotes4.jpg" alt="DomiNotes Screenshot 4" class="d-block w-100 carousel-img-custom">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="DomiNotes5.jpg" alt="DomiNotes Screenshot 5" class="d-block w-100 carousel-img-custom">
+                                </div>
+                            </div>
+
+                            <button class="carousel-control-prev" type="button" data-bs-target="#DomiNotesCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#DomiNotesCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="description-block">
+                            <p class="description highlight-title">DomiNotes</p>
+                            <p class="description-project">
+                                DomiNotes is a secure, offline-capable Progressive Web App (PWA) developed using Flutter Web, designed to provide users with an efficient and organized way to manage notes and folders through a clean, minimalist, iOS-inspired interface.
+                            </p>
+                            <p class="description-project tech-stack">
+                                Tech Stack: Flutter Web, Dart, Hive NoSQL<br>
+                                Key Features: PIN authentication, folders, dark mode, full offline support.
+                            </p>
+                        </div>
                     </div>
-                    <div class="tech-item">
-                        <img src="CSS3.jpg" alt="CSS" class="animate__animated animate__flipInY" />
-                        <div class="animate__animated animate__zoomIn">CSS</div>
-                    </div>
-                    <div class="tech-item">
-                        <img src="JavaScript.jpg" alt="Java" class="animate__animated animate__flipInY" />
-                        <div class="animate__animated animate__zoomIn">JavaScript</div>
-                    </div>
-                    <div class="tech-item">
-                        <img src="JAVA.jpg" alt="C" class="animate__animated animate__flipInY" />
-                        <div class="animate__animated animate__zoomIn">Java</div>
-                    </div>
-                    <div class="tech-item">
-                        <img src="C.jpg" alt="C" class="animate__animated animate__flipInY" />
-                        <div class="animate__animated animate__zoomIn">C</div>
-                    </div>
+                    
+                    <a href="https://dominotess.netlify.app/?fbclid=IwY2xjawKk3wtleHRuA2FlbQIxMQABHsxD9wjW6T8OGPTY0Tw8NpDOgH0TX-gyhcS6znBRwXKFot502LlON22pLJDN_aem_IX798zUYWoXISFsbHR5f6Q" target="_blank" class="view-btn">See Project</a>
                 </div>
-            </section>
+            </div>
         </div>
 
-        <div class="devtool-header animate__animated animate__flipInX">
-            <h2>Developer Tools</h2>
+        <div class="certificate-header animate__animated animate__flipInX text-center mt-5">
+            <h2>Certificates</h2>
         </div>
-        <div class="techstack-wrapper">
-            <section class="techstack-section">
-                <div class="techstack-content">
-                    <div class="tech-item">
-                        <img src="VSCode.jpg" alt="Visual Studio Code" class="animate__animated animate__flipInY" />
-                        <div class="animate__animated animate__zoomIn">Visual Studio Code</div>
-                    </div>
-                    <div class="tech-item">
-                        <img src="Android Studio.jpg" alt="Android Studio" class="animate__animated animate__flipInY" />
-                        <div class="animate__animated animate__zoomIn">Android Studio</div>
-                    </div>
-                    <div class="tech-item">
-                        <img src="Oracle Apex.jpg" alt="Oracle APEX" class="animate__animated animate__flipInY" />
-                        <div class="animate__animated animate__zoomIn">Oracle APEX</div>
-                    </div>
-                    <div class="tech-item">
-                        <img src="Git.jpg" alt="GitHub" class="animate__animated animate__flipInY" />
-                        <div class="animate__animated animate__zoomIn">Git</div>
-                    </div>
-                    <div class="tech-item">
-                        <img src="GitHub.jpg" alt="GitHub" class="animate__animated animate__flipInY" />
-                        <div class="animate__animated animate__zoomIn">GitHub</div>
-                    </div>
+        <div class="certificate-grid">
+            <div class="certificate nft animate__animated animate__flipInY">
+                <div class="main">
+                    <img class="tokenImage" src="CertDatabases.jpg" alt="Certificate 1" />
+                    <p class="description">Information Technology Specialist</p>
+                    <p class="description">Databases</p>
+                    <a href="CertDatabases.jpg" target="_blank" class="view-btn">Full View</a>
                 </div>
-            </section>
+            </div>
+            <div class="certificate nft animate__animated animate__flipInY">
+                <div class="main">
+                    <img class="tokenImage" src="CertWord.jpg" alt="Certificate 2" />
+                    <p class="description">Microsoft Office Specialist</p>
+                    <p class="description">Word</p>
+                    <a href="CertWord.jpg" target="_blank" class="view-btn">Full View</a>
+                </div>
+            </div>
+            <div class="certificate nft animate__animated animate__flipInY">
+                <div class="main">
+                    <img class="tokenImage" src="CertPowerPoint.jpg" alt="Certificate 3" />
+                    <p class="description">Microsoft Office Specialist</p>
+                    <p class="description">PowerPoint</p>
+                    <a href="CertPowerPoint.jpg" target="_blank" class="view-btn">Full View</a>
+                </div>
+            </div>
+            <div class="certificate nft animate__animated animate__flipInY">
+                <div class="main">
+                    <img class="tokenImage" src="clmsCertificate.jpg" alt="Certificate 4" />
+                    <p class="description">Oracle Academy</p>
+                    <p class="description">Java Foundation</p>
+                    <a href="clmsCertificate.jpg" target="_blank" class="view-btn">Full View</a>
+                </div>
+            </div>
         </div>
-
+        
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="scripts.js"></script>
     </body>

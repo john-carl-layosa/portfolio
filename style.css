@@ -13,9 +13,9 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #1A1917;
+  background-color: #000000ef;
   overflow: hidden;
-  z-index: 1000;
+  z-index: 1;
 }
 
 
@@ -332,24 +332,25 @@ img {
   justify-content: center;
   align-items: center;
   margin-top: 3rem;
-
+  margin-left: auto;
+  margin-right: auto;
 
   box-sizing: border-box;
-  width: fit-content;
-  max-width: 900px;
-  padding: 30px 130px;
+  width: 900px;
+  padding: 30px 10px;
   border-radius: 15px;
 
   background-color: transparent;
-  box-shadow:  10px 10px 20px #E85A4F,
-  -10px -10px 20px #E85A4F;
+  box-shadow: 10px 10px 20px #E85A4F,
+    -10px -10px 20px #E85A4F;
 }
 
 .techstack-content {
   display: flex;
-  gap: 2.5rem;
-  justify-content: space-evenly;
-  
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  width: 100%;
 }
 
 .tech-item {
@@ -358,6 +359,7 @@ img {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin: 0;
 }
 
 .tech-item img {
@@ -366,17 +368,17 @@ img {
   border-radius: 25px;
   background: #e0e0e0;
   box-shadow: 5px 5px 10px #5a5a5a,
-  -5px -5px 10px #EAE7DC;
+    -5px -5px 10px #EAE7DC;
 }
 
 .tech-item img:hover {
   transform: scale(1.2);
   box-shadow: 8px 8px 20px #E85A4F,
-  -8px -8px 20px #E85A4F;
+    -8px -8px 20px #E85A4F;
 }
- 
+
 .tech-item div {
-  width:100%;
+  width: 100%;
   margin-top: 1rem;
   font-size: 24px;
   font-family: "Source Sans 3", sans-serif;
@@ -385,6 +387,7 @@ img {
   font-style: normal;
   color: #5F5E5B;
 }
+
 
 @media (max-width: 1200px) {
   .experience-content p {
@@ -444,7 +447,7 @@ img {
 
   .tech-item div {
     margin-top: 1rem; /* spacing only below image */
-    margin-bottom: 0;
+    margin-bottom: 0;  
     font-size: 16px;
     font-family: "Source Sans 3", sans-serif;
     font-optical-sizing: auto;
@@ -514,39 +517,75 @@ img {
 }
 
 
-/* Main content box */
 .about-content {
-  max-width: 100%;
-  
-}
+            max-width: 100%;
+        }
 
-/* Heading */
-.about-content h1 {
-  color: #E85A4F;
-  font-size: 40px;
-  font-family: "Chivo", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
-  margin-top: 7.5rem;
-  text-align: center;
-}
+        .about-content h1 {
+            color: #E85A4F;
+            font-size: 40px;
+            font-family: "Chivo", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+            margin-top: 7.5rem;
+            text-align: center;
+        }
 
-/* Paragraph */
-.about-content p {
-  max-width: 100%;
-  margin-left: 12rem;
-  margin-right: 12rem;
-  color: #5F5E5B;
-  margin-bottom: 1.5rem;
-  font-size: 20px;
-  line-height: 2;
-  text-align: justify;
-  font-family: "Source Sans 3", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
+        .about-main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2.5rem;
+            max-width: 1200px; 
+            margin: 3rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .photo {
+            flex-shrink: 0;
+            display: block;
+        }
+
+        .photo img {
+            max-width: 200px;
+            width: 100%;
+            height: auto;
+            margin-top: 1rem;
+            border-radius: 12px;
+            border-color: #E85A4F;
+            box-shadow: 5px 5px 10px #E85A4F, -5px -5px 10px #E85A4F;
+        }
+
+        .text-container {
+            flex-grow: 1;
+        }
+
+        .about-content p {
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            color: #5F5E5B;
+            margin-top: 0rem;
+            margin-bottom: 1.5rem;
+            font-size: 20px;
+            line-height: 2;
+            text-align: justify;
+            font-family: "Source Sans 3", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        @media (min-width: 1200px) {
+            .about-main {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+
+            .photo img {
+                margin-top: 0;
+            }
+
+        }
 
 .certificate-header{
   text-align: center;
@@ -585,9 +624,10 @@ img {
 /* Optional: Responsive styling */
 @media (max-width: 1200px) {
   .about-content p {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
     font-size: 18px;
+    margin-top: 1rem;
   }
 
   .about-content h1 {
@@ -701,14 +741,216 @@ img {
   }
 }
 
+.project-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 2rem auto;
+    max-width: 1000px;
+    margin-bottom: 5rem;
+    min-height: 50vh;
+}
+
+.nft {
+    margin: 0;
+    border: 1px solid #E85A4F;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.800) 0%, #5F5E5B 100%);
+    box-shadow: none;
+    border-radius: 0.7rem;
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    overflow: hidden;
+    transition: 0.5s all;
+}
+
+.nft:hover {
+    border: 1px solid #ffffff44;
+    transform: scale(1.015);
+    filter: brightness(1.0);
+}
+
+.nft .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 1rem;
+}
+
+.description-block {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-width: 300px;
+    padding: 0;
+}
+
+/* CUSTOM STYLES FOR BOOTSTRAP CAROUSEL HEIGHT */
+#DomiNotesCarousel {
+    width: 260px;
+    max-width: 100%;
+    height: 230px;
+    border-radius: 0.5rem;
+    flex-shrink: 0;
+    box-shadow: 0 0 10px 2px #E85A4F; 
+}
+
+.carousel-img-custom {
+    max-height: 230px;
+    width: auto;
+    object-fit: contain;
+    margin: 0 auto;
+    /* REMOVE CIRCULAR GLOW/CLIPPING */
+    border-radius: 0 !important;
+    clip-path: none !important;
+}
+/* END CUSTOM CAROUSEL STYLES */
+
+.description {
+    font-size: 20px;
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #EAE7DC;
+    text-align: left;
+}
+
+.description-project {
+    font-size: 16px;
+    font-family: "Source Sans 3", sans-serif;
+    margin-bottom: 1rem;
+    color: #EAE7DC;
+    line-height: 1.4;
+}
+
+.description-project.tech-stack {
+    margin-top: 0;
+}
+
+.view-btn {
+    background-color: #E85A4F;
+    color: #EAE7DC;
+    padding: 0.4rem 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 16px;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    transition: background 0.3s ease;
+}
+
+.view-btn:hover {
+    background-color: #5F5E5B ;
+}
+
+/* Certificate images also need their custom sizing applied */
+.certificate .tokenImage {
+    max-height: 230px;
+    width: 100%;
+    object-fit: contain;
+    margin-top: auto;
+    /* REMOVE CIRCULAR GLOW/CLIPPING */
+    border-radius: 0 !important;
+    clip-path: none !important;
+}
+
+@media (max-width: 800px) {
+    .project-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+        gap: 1rem;
+        min-height: 0;
+    }
+    
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 1rem 0;
+    }
+    
+    .description-block {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+    
+    .description, .description-project {
+        text-align: center;
+    }
+
+    .nft {
+        margin: 1rem 0;
+        max-width: 95%;
+        justify-self: center;
+        width: 100%;
+    }
+
+    .header-right .icon {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .offcanvas-custom {
+        position: fixed !important;
+        width: 200px;
+        top: 1.5rem;
+        bottom: auto;
+        right: 10px;
+        border-radius: 10px;
+        background-color: #E85A4F;
+        color: #EAE7DC;
+        box-shadow: 5px 5px 10px #E85A4F, -5px -5px 10px #E85A4F;
+        padding: 1rem;
+        display: none;
+        z-index: 1050;
+    }
+
+    .offcanvas-body a {
+        display: block;
+        margin: 10px 0;
+        color: #EAE7DC;
+        text-decoration: none;
+        font-family: "Rubik", sans-serif;
+    }
+
+    .offcanvas-body a:hover {
+        color: #5F5E5B;
+    }
+
+    .offcanvas.show {
+        display: block !important;
+    }
+
+    .header-right > a:not(.icon) {
+        display: none;
+    }
+}
 
 .certificate-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
   justify-items: center;
   margin: 2rem auto;
-  max-width: 1000px;
+  max-width: 1200px;
+  margin-bottom: 5rem;
 }
 
 .nft {
@@ -726,7 +968,6 @@ img {
 
 .nft:hover {
   border: 1px solid #ffffff44;
-  box-shadow: 0 7px 50px 10px #E85A4F;
   transform: scale(1.015);
   filter: brightness(1.0);
 }
@@ -745,6 +986,7 @@ img {
   max-width: 100%;
   height: auto;
   object-fit: contain;
+  margin-top: auto;
 }
 
 .description {
@@ -786,17 +1028,19 @@ img {
 
 @media (max-width: 800px) {
   .certificate-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
     gap: 1rem;
-    padding: 0 0.5rem;
   }
 
   .nft {
-    max-width: 100%;
+    margin: 1rem 0;
+    max-width: 95%;
     justify-self: center;
+    width: 100%;
   }
-}
 
-@media (max-width: 800px) {
   .header-right .icon {
     display: block;
     font-size: 24px;
@@ -838,5 +1082,3 @@ img {
     display: none;
   }
 }
-
-

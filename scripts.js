@@ -11,6 +11,44 @@ document.addEventListener("click", function (event) {
     }
 });
 
+function toggleMobileMenu() {
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (mobileMenu) {
+        mobileMenu.classList.toggle('show');
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const carouselInner = document.querySelector('.carousel-inner');
+    const images = document.querySelectorAll('.tokenImage');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    
+    if (!carouselInner || images.length === 0 || !prevBtn || !nextBtn) {
+        return;
+    }
+
+    const totalImages = images.length;
+    let currentIndex = 0;
+
+    function updateCarousel() {
+        const offset = -currentIndex * 100;
+        carouselInner.style.transform = `translateX(${offset}%)`;
+    }
+
+    nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % totalImages;
+        updateCarousel();
+    });
+
+    prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+        updateCarousel();
+    });
+
+    updateCarousel(); 
+});
+
 particlesJS("particles-js", {
     particles: {
         number: {
@@ -127,4 +165,9 @@ particlesJS("particles-js", {
         background_size: "cover"
     }
 });
+
+
+
+
+
 
